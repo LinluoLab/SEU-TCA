@@ -127,5 +127,8 @@ res = pd.DataFrame(res.iloc[len(st_tca.columns):, :len(st_tca.columns)],
 
 print(res)
 ```
+## Data Availability
+All datasets used in the related publication are publicly available on Zenodo
+
 ## Acknowledgements
 The authors are grateful to the Lin & Luo lab members for helpful discussion of this study. 
