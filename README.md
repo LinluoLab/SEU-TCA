@@ -103,8 +103,8 @@ Xs = sc.X  # scRNA-seq data matrix
 Xt = st.X  # ST data matrix
 
 # Initialize SEU-TCA
-SEU_TCA = SEU_TCA(kernel_type='linear', dim=10, lamb=1, gamma=1)
-Xs_new, Xt_new = SEU_TCA.fit(Xs, Xt)
+seu_tca = seu_tca(kernel_type='linear', dim=10, lamb=1, gamma=1)
+Xs_new, Xt_new = seu_tca.fit(Xs, Xt)
 
 # Convert the aligned data into DataFrames with appropriate labels
 st_tca = pd.DataFrame(Xt_new, 
